@@ -441,7 +441,8 @@ footer h2 {
   margin-top: 62px;
 }
 
-.publication-group h2 {
+.publication-group h2,
+.publication-group-title {
   margin: 0 0 20px;
   color: var(--forest);
   font-family: var(--sans);
@@ -851,7 +852,8 @@ footer p {
     margin-top: 44px;
   }
 
-  .publication-group h2 {
+  .publication-group h2,
+  .publication-group-title {
     font-size: 26px;
   }
 
