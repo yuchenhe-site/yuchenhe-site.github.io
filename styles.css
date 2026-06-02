@@ -437,6 +437,18 @@ footer h2 {
   list-style: none;
 }
 
+.publication-group {
+  margin-top: 62px;
+}
+
+.publication-group h2 {
+  margin: 0 0 20px;
+  color: var(--forest);
+  font-family: var(--sans);
+  font-size: 30px;
+  letter-spacing: -0.035em;
+}
+
 .publication-item {
   display: grid;
   grid-template-columns: 68px minmax(0, 1fr);
@@ -833,6 +845,14 @@ footer p {
   .publication-item {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .publication-group {
+    margin-top: 44px;
+  }
+
+  .publication-group h2 {
+    font-size: 26px;
   }
 
   .publication-item h3 {
