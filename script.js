@@ -43,8 +43,8 @@ document.querySelector("footer").innerHTML = `
 const toggle = document.querySelector(".language-toggle");
 function renderProfileActions(language) {
   const cv = language === "zh"
-    ? '<a class="button button-primary" href="assets/CV-He-Yuchen-Chinese.docx"><span class="button-icon" aria-hidden="true">▤</span>中文简历</a>'
-    : '<a class="button button-primary" href="assets/CV-Yuchen-He-English.pdf"><span class="button-icon" aria-hidden="true">▤</span>CV</a>';
+    ? '<a class="button button-secondary" href="assets/CV-He-Yuchen-Chinese.docx"><span class="button-icon" aria-hidden="true">▤</span>中文简历</a>'
+    : '<a class="button button-secondary" href="assets/CV-Yuchen-He-English.pdf"><span class="button-icon" aria-hidden="true">▤</span>CV</a>';
   const scholar = '<a class="button button-secondary" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-XjJC-cAAAAJ" target="_blank" rel="noreferrer"><span class="button-icon scholar-icon" aria-hidden="true">G</span>Google Scholar</a>';
   document.querySelector(".profile-actions").innerHTML = cv + scholar;
 }
