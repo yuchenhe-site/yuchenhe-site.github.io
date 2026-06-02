@@ -447,7 +447,7 @@ footer h2 {
 .highlight-card p:last-child {
   margin-bottom: 0;
   color: #596660;
-  font-family: var(--serif);
+  font-family: Garamond, "EB Garamond", "Adobe Garamond Pro", Georgia, serif;
   font-size: 16px;
 }
 
@@ -525,14 +525,14 @@ footer h2 {
 .working-grid h3 {
   margin: 16px 0 13px;
   font-family: var(--sans);
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.55;
 }
 
 .working-grid p:last-child {
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .timeline-grid {
