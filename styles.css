@@ -774,6 +774,43 @@ footer p {
     padding-block: 56px;
   }
 
+  .page-section + .page-section {
+    margin-top: 46px;
+    padding-top: 42px;
+  }
+
+  .research-highlight .section-heading {
+    margin-bottom: 18px;
+  }
+
+  .research-highlight h2 {
+    margin-bottom: 0;
+  }
+
+  .highlight-grid {
+    gap: 10px;
+  }
+
+  .highlight-card {
+    min-height: 0;
+    padding: 16px 18px;
+  }
+
+  .card-number {
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  .highlight-card h3 {
+    margin: 4px 0 6px;
+    font-size: 20px;
+  }
+
+  .highlight-card p:last-child {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
   .muted-section {
     width: 100%;
     padding-inline: 14px;
