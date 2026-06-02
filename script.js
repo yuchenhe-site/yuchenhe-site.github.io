@@ -25,7 +25,6 @@ document.querySelector(".site-header").innerHTML = `
 document.querySelector(".profile-card").innerHTML = `
   <img class="profile-photo" src="assets/yuchen-he.jpg" alt="Portrait of Yuchen He" />
   <div class="profile-details">
-    <p class="eyebrow"><span class="lang lang-en">Sociologist</span><span class="lang lang-zh">社会学研究者</span></p>
     <h2><span class="lang lang-en">Yuchen He</span><span class="lang lang-zh">何雨辰</span></h2>
     <p class="profile-role"><span class="lang lang-en">Ph.D. Candidate in Sociology</span><span class="lang lang-zh">社会学博士候选人</span></p>
     <ul class="profile-meta">

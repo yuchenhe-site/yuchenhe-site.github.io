@@ -188,6 +188,9 @@ body[data-language="zh"] [data-toggle-lang="zh"] {
   top: 104px;
   left: max(24px, calc((100vw - 1180px) / 2));
   width: 300px;
+  max-height: calc(100vh - 128px);
+  overflow-y: auto;
+  padding-bottom: 4px;
 }
 
 .profile-photo {
@@ -198,7 +201,7 @@ body[data-language="zh"] [data-toggle-lang="zh"] {
   border-radius: 2px;
   object-fit: cover;
   object-position: 50% 46%;
-  box-shadow: 0 14px 32px rgba(67, 124, 157, 0.14);
+  box-shadow: 0 18px 38px rgba(42, 66, 79, 0.2), 0 5px 12px rgba(67, 124, 157, 0.16);
 }
 
 .profile-details {
@@ -709,24 +712,26 @@ footer p {
   .page-shell {
     display: block;
     padding-left: 0;
-    padding-block: 30px 54px;
+    padding-block: 24px 50px;
   }
 
   .profile-card {
     position: static;
-    display: grid;
-    grid-template-columns: 112px minmax(0, 1fr);
-    gap: 18px;
+    display: block;
+    width: 100%;
+    max-height: none;
+    overflow-y: visible;
+    padding-bottom: 0;
   }
 
   .profile-photo {
-    width: 112px;
-    height: 140px;
+    width: min(100%, 260px);
+    height: auto;
     object-position: 50% 45%;
   }
 
   .profile-details {
-    padding: 0;
+    padding: 20px 0 0;
   }
 
   h1 {
@@ -739,16 +744,15 @@ footer p {
   }
 
   .profile-meta {
-    margin: 7px 0 0;
+    margin: 12px 0;
   }
 
   .profile-meta li {
-    margin: 1px 0;
-    font-size: 12px;
+    margin: 3px 0;
+    font-size: 14px;
   }
 
   .profile-actions {
-    grid-column: 1 / -1;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 15px;
   }
