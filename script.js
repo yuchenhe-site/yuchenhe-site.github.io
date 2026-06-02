@@ -33,9 +33,6 @@ document.querySelector(".profile-card").innerHTML = `
       <li><span class="meta-icon" aria-hidden="true">@</span><a href="mailto:yuchenhe@stu.pku.edu.cn">yuchenhe@stu.pku.edu.cn</a></li>
     </ul>
     <div class="profile-actions">
-      <a class="button button-primary lang lang-en" href="assets/CV-Yuchen-He-English.pdf"><span class="button-icon" aria-hidden="true">▤</span>CV</a>
-      <a class="button button-primary lang lang-zh" href="assets/CV-He-Yuchen-Chinese.docx"><span class="button-icon" aria-hidden="true">▤</span>中文简历</a>
-      <a class="button button-secondary" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-XjJC-cAAAAJ" target="_blank" rel="noreferrer"><span class="button-icon scholar-icon" aria-hidden="true">G</span>Google Scholar</a>
     </div>
   </div>`;
 
@@ -44,12 +41,21 @@ document.querySelector("footer").innerHTML = `
   <p class="copyright">© <span id="current-year"></span> Yuchen He · <span class="lang lang-en">Last updated June 2026</span><span class="lang lang-zh">更新于 2026 年 6 月</span></p>`;
 
 const toggle = document.querySelector(".language-toggle");
+function renderProfileActions(language) {
+  const cv = language === "zh"
+    ? '<a class="button button-primary" href="assets/CV-He-Yuchen-Chinese.docx"><span class="button-icon" aria-hidden="true">▤</span>中文简历</a>'
+    : '<a class="button button-primary" href="assets/CV-Yuchen-He-English.pdf"><span class="button-icon" aria-hidden="true">▤</span>CV</a>';
+  const scholar = '<a class="button button-secondary" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-XjJC-cAAAAJ" target="_blank" rel="noreferrer"><span class="button-icon scholar-icon" aria-hidden="true">G</span>Google Scholar</a>';
+  document.querySelector(".profile-actions").innerHTML = cv + scholar;
+}
+
 function setLanguage(language) {
   const isChinese = language === "zh";
   document.body.dataset.language = isChinese ? "zh" : "en";
   document.documentElement.lang = isChinese ? "zh-CN" : "en";
   toggle.setAttribute("aria-pressed", String(isChinese));
   localStorage.setItem("preferred-language", isChinese ? "zh" : "en");
+  renderProfileActions(isChinese ? "zh" : "en");
 }
 toggle.addEventListener("click", () => setLanguage(document.body.dataset.language === "en" ? "zh" : "en"));
 document.querySelector("#current-year").textContent = new Date().getFullYear();
