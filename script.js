@@ -33,9 +33,9 @@ document.querySelector(".profile-card").innerHTML = `
       <li><span class="meta-icon" aria-hidden="true">@</span><a href="mailto:yuchenhe@stu.pku.edu.cn">yuchenhe@stu.pku.edu.cn</a></li>
     </ul>
     <div class="profile-actions">
-      <a class="button button-primary lang lang-en" href="assets/CV-Yuchen-He-English.pdf">Download CV</a>
-      <a class="button button-primary lang lang-zh" href="assets/CV-He-Yuchen-Chinese.docx">下载简历</a>
-      <a class="button button-secondary" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-XjJC-cAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+      <a class="button button-primary lang lang-en" href="assets/CV-Yuchen-He-English.pdf"><span class="button-icon" aria-hidden="true">▤</span>CV</a>
+      <a class="button button-primary lang lang-zh" href="assets/CV-He-Yuchen-Chinese.docx"><span class="button-icon" aria-hidden="true">▤</span>中文简历</a>
+      <a class="button button-secondary" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=-XjJC-cAAAAJ" target="_blank" rel="noreferrer"><span class="button-icon scholar-icon" aria-hidden="true">G</span>Google Scholar</a>
     </div>
   </div>`;
 
